@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
         body: Center(
           child: PieProgressIndicator(
             value: 0.15, // The progress value, ranging from 0.0 to 1.0.
-            color: Colors.grey.withOpacity(
-                0.5), // The color of the progress segment with 50% opacity.
+            // color: Colors.grey.withOpacity(
+            //     0.5), // The color of the progress segment with 50% opacity.
             // strokeColor: Colors.black, // The color of the surrounding circle. Defaults to the color parameter if not provided.
             // strokeWidth: 8.0, // The thickness of the surrounding circle. Defaults to 16% of the size if not provided.
             // backgroundColor: Colors.white, // The background color behind the progress indicator.

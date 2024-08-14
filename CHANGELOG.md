@@ -1,3 +1,7 @@
+## 0.0.4
+
+* color is optional like circular progress indicator
+
 ## 0.0.3
 
 * added screenshots

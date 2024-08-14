@@ -124,7 +124,7 @@ class PieProgressIndicator extends StatelessWidget {
   final double value;
 
   /// The color of the progress segment.
-  final Color color;
+  final Color? color;
 
   /// The color of the surrounding circle.
   final Color? strokeColor;
@@ -158,7 +158,7 @@ class PieProgressIndicator extends StatelessWidget {
   const PieProgressIndicator({
     super.key,
     required this.value,
-    required this.color,
+    this.color,
     this.strokeColor,
     this.strokeWidth,
     this.backgroundColor,
@@ -169,6 +169,13 @@ class PieProgressIndicator extends StatelessWidget {
     this.valueStrokeFactor,
     this.backgroundStrokeFactor,
   });
+
+  Color _getEffectiveColor(BuildContext context) {
+    return valueColor?.value ??
+        color ??
+        ProgressIndicatorTheme.of(context).color ??
+        Theme.of(context).colorScheme.primary;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -183,7 +190,8 @@ class PieProgressIndicator extends StatelessWidget {
           // `strokeWidth` is set to 16% of the size
           final double effectiveStrokeWidth =
               strokeWidth ?? effectiveSize * 0.16;
-          final Color effectiveStrokeColor = strokeColor ?? color;
+          final Color effectiveColor = _getEffectiveColor(context);
+          final Color effectiveStrokeColor = strokeColor ?? effectiveColor;
           final effectiveValueStrokeFactor = valueStrokeFactor ?? 0;
           final effectiveBackgroundStrokeFactor = backgroundStrokeFactor ?? 0;
           return SizedBox(
@@ -192,7 +200,7 @@ class PieProgressIndicator extends StatelessWidget {
             child: CustomPaint(
               painter: PieProgressPainter(
                 value: value,
-                color: valueColor?.value ?? color,
+                color: effectiveColor,
                 strokeColor: effectiveStrokeColor,
                 strokeWidth: effectiveStrokeWidth,
                 backgroundColor: backgroundColor,
