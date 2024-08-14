@@ -71,15 +71,25 @@ class MyApp extends StatelessWidget {
 ## Parameter Descriptions
 
 **value:** The progress value, ranging from 0.0 (0%) to 1.0 (100%).
+
 **color:** The color of the progress segment. You can use withOpacity() to apply transparency.
+
 **strokeColor:** (Optional) The color of the surrounding circle. Defaults to the color parameter if not provided.
+
 **strokeWidth:** (Optional) The thickness of the surrounding circle. Defaults to 16% of the size parameter if not provided.
+
 **backgroundColor:** (Optional) The background color behind the progress indicator.
+
 **valueColor:** (Optional) Allows you to animate the color of the progress segment.
+
 **semanticsLabel:** (Optional) A label for screen readers to describe the progress indicator.
+
 **semanticsValue:** (Optional) A value description of the current progress for screen readers.
+
 **size:** (Optional) Sets the size of the progress indicator. Defaults to a minimum of 36.0 dp.
+
 **valueStrokeFactor:** (Optional) Determines the relative thickness of the progress segment compared to the surrounding circle.
+
 **backgroundStrokeFactor:** (Optional) Determines the relative thickness of the background compared to the surrounding circle.
 
 ## Support
