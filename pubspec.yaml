@@ -1,6 +1,6 @@
 name: pie_progress_indicator
 description: "A lightweight, Cupertino pie-style circular progress indicator for Flutter"
-version: 0.0.2
+version: 0.0.3
 homepage: https://clipspace.app/
 repository: https://github.com/olerhan/pie_progress_indicator.git
 issue_tracker: https://github.com/olerhan/pie_progress_indicator/issues
@@ -10,6 +10,9 @@ topics:
   - cupertino
   - circular
   - pie
+screenshots:
+  - description: 'Example of smooth page indicator.'
+    path: screenshots/thumbnail.jpg
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
