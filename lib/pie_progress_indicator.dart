@@ -189,7 +189,7 @@ class PieProgressIndicator extends StatelessWidget {
               constraints.smallest.shortestSide.clamp(36.0, double.infinity);
           // `strokeWidth` is set to 16% of the size
           final double effectiveStrokeWidth =
-              strokeWidth ?? effectiveSize * 0.16;
+              strokeWidth ?? effectiveSize * 0.12;
           final Color effectiveColor = _getEffectiveColor(context);
           final Color effectiveStrokeColor = strokeColor ?? effectiveColor;
           final effectiveValueStrokeFactor = valueStrokeFactor ?? 0;

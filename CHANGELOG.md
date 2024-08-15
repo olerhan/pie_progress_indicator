@@ -1,3 +1,7 @@
+## 0.0.5
+
+* fix default design parameter
+
 ## 0.0.4
 
 * color is optional like circular progress indicator

@@ -7,6 +7,7 @@
   <a href="https://github.com/olerhan/pie_progress_indicator"><img src="https://img.shields.io/github/stars/olerhan/pie_progress_indicator" /></a>
   <a href="https://opensource.org/licenses/BSD-3-Clause"><img src="https://img.shields.io/badge/license-BSD--3--Clause-blue.svg" alt="License: BSD-3-Clause"></a>
   <br />
+  <br />
   <img src="https://raw.githubusercontent.com/olerhan/pie_progress_indicator/main/screenshots/thumbnail.jpg" />
 </p>
 
